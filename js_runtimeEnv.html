@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+
+<html>
+<!-- Page header -->
+<head>
+	<title>JavaScript Runtime Environment</title>
+
+<!-- body { min-width: 357px; overflow-x: hidden; } -->
+<!--
+button, input[ type="button" ], {
+	font-size: 100%;
+	margin: 0;
+	vertical-align: baseline;
+	*vertical-align: middle;
+	line-height: normal;
+	*overflow: visible;
+	cursor: pointer;
+	-webkit-appearance: button;
+-->
+
+	<style>
+body {
+	min-width: 357px;
+}
+
+img {
+	margin: 5px;
+	border: 2px solid black;
+	vertical-align: middle;
+	width: 75px;
+	height: 75px;
+}
+
+button, input[ type="button" ], {
+	vertical-align: baseline;
+	*vertical-align: middle;
+	line-height: normal;
+	*overflow: visible;
+	-webkit-appearance: button;
+
+	display:inline-block;
+	zoom:1;
+	*display:inline;
+	min-width:100px;
+	margin:0px;
+	padding:6px 10px;
+	border:1px solid #b2b2b2;
+	height:auto;
+	width:auto;
+	background:#f5f5f5;
+	float:none;
+	cursor:pointer;
+	background-color:#efefef;
+	background-image:-moz-linear-gradient(top, #f5f5f5, #e6e6e6);
+	background-image:-ms-linear-gradient(top, #f5f5f5, #e6e6e6);
+	background-image:-webkit-gradient(linear, 0 0, 0 100%, from(#f5f5f5), to(#e6e6e6));
+	background-image:-webkit-linear-gradient(top, #f5f5f5, #e6e6e6);
+	background-image:-o-linear-gradient(top, #f5f5f5, #e6e6e6);
+	background-image:linear-gradient(top, #f5f5f5, #e6e6e6);
+	background-repeat:repeat-x;
+	color:#747474;
+	line-height:18px;
+	font-family:helvetica,arial,sans-serif;
+	font-size:13px;
+	font-style:normal;
+	font-variant:normal;
+	font-weight:normal;
+	text-align:left;
+	text-decoration:none;
+	text-indent:0;
+	text-justify:auto;
+	text-outline:none;
+	text-overflow:clip;
+	text-shadow:none;
+	text-transform:none;
+	text-wrap:normal;
+	color:#3b3b3b;
+	text-align:center;
+	-webkit-border-radius:2px;
+	border-radius:2px;
+	-webkit-box-shadow:0px 0px 0px #000000;
+	box-shadow:0px 0px 0px #000000;
+	-webkit-transition:all 0.2s ease 0;
+	-o-transition:all 0.2s ease 0;
+	transition:all 0.2s ease 0;
+	-webkit-touch-callout:none;
+	-webkit-user-select:none;
+	-khtml-user-select:none;
+	user-select:none;
+	}
+
+	/* A CSS stylesheet for the console */
+	#menu {
+		padding: 5px;
+		background: #c0c0c0;
+		border: solid black 2px;
+		border-radius: 10px;
+	}
+
+	/* A CSS stylesheet for the console */
+	#console {
+		font: 12pt courier;
+		color: white;
+		background: black;
+		padding: 5px;
+		border: solid black 2px;
+		border-radius: 10px;
+	}
+	</style>
+
+	<script src="chapter2.js" />
+	<script type="text/javascript">
+	</script>
+</head>
+
+<!-- Page body -->
+<body>
+	<div id="menu" class="menu">
+		<input id="btn_limpar" type="button" class="button" value="Limpar" onclick="javascript:limpar(); return false;" />
+		<input id="btn_literais" type="button" class="button" value="Literais" onclick="javascript:literais(); return false;" />
+		<input id="btn_fatorial" type="button" class="button" value="Fatorial" onclick="javascript:fatorial(); return false;" />
+	</div>
+	<div id="console" class="console">
+		<br />
+	</div>
+</body>
+</html>
