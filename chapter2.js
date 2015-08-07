@@ -14,6 +14,7 @@ function limpar() {
 
 function literais() {
 	var stdout = document.getElementById( 'stdout' );
+	var	indefinido;
 	var inteiro_positivo = 125;
 	var inteiro_negativo = -15;
 	var ponto_flutuante = 3.141592653589;
@@ -23,7 +24,8 @@ function literais() {
 	var tipo = typeof( ponto_flutuante );
 	var	comparacao = ( inteiro_positivo > inteiro_negativo );
 
-	stdout.innerHTML = "inteiro (positivo): " + inteiro_positivo + "<br />"
+	stdout.innerHTML = "indefinido: " + indefinido + "<br />"
+			+ "inteiro (positivo): " + inteiro_positivo + "<br />"
 			+ "inteiro (negativo): " + inteiro_negativo + "<br />"
 			+ "ponto flutuante: " + ponto_flutuante + "<br />"
 			+ "ponto flutuante (exponencial): " + exponencial + "<br />"
