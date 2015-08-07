@@ -1,6 +1,6 @@
-/* *
-	 * Limpa o conteudo do stdout
-	 */
+/*	*
+	* Limpa o conteudo do stdout
+	*/
 
 function limpar() {
 	var stdout = document.getElementById( 'stdout' );
@@ -8,9 +8,9 @@ function limpar() {
 	stdout.innerHTML = "<br />";
 }
 
-/* *
-	 * Teste de uso de literais
-	 */
+/*	*
+	* Teste de uso de literais
+	*/
 
 function literais() {
 	var stdout = document.getElementById( 'stdout' );
@@ -33,9 +33,9 @@ function literais() {
 			+ "comparacao: " + comparacao + "<br />";
 }
 
-/* *
-	 * Calculo do fatorial
-	 */
+/*	*
+	* Calculo do fatorial
+	*/
 
 function fatorial( n ) {
 	var stdout = document.getElementById( 'stdout' );
@@ -49,3 +49,21 @@ function fatorial( n ) {
 
 	stdout.innerHTML = "fatorial: " + fatorial + "<br />";
 }
+
+/*	*
+	* Calculo da potencia
+	*/
+
+function potencia( n, p ) {
+	var stdout = document.getElementById( 'stdout' );
+	var potencia = 1;
+
+	console.log( potencia );
+	for( var i = 1; i <= p; i++ ) {
+		potencia = n * potencia;
+		console.log( potencia );
+	}
+
+	stdout.innerHTML = "potencia: " + potencia + "<br />";
+}
+
