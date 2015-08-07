@@ -1,11 +1,11 @@
 /* *
-	 * Limpa o conteudo do console
+	 * Limpa o conteudo do stdout
 	 */
 
 function limpar() {
-	var console = document.getElementById( 'console' );
+	var stdout = document.getElementById( 'stdout' );
 
-	console.innerHTML = "<br />";
+	stdout.innerHTML = "<br />";
 }
 
 /* *
@@ -13,7 +13,7 @@ function limpar() {
 	 */
 
 function literais() {
-	var console = document.getElementById( 'console' );
+	var stdout = document.getElementById( 'stdout' );
 	var inteiro_positivo = 125;
 	var inteiro_negativo = -15;
 	var ponto_flutuante = 3.141592653589;
@@ -23,7 +23,7 @@ function literais() {
 	var tipo = typeof( ponto_flutuante );
 	var	comparacao = ( inteiro_positivo > inteiro_negativo );
 
-	console.innerHTML = "inteiro (positivo): " + inteiro_positivo + "<br />"
+	stdout.innerHTML = "inteiro (positivo): " + inteiro_positivo + "<br />"
 			+ "inteiro (negativo): " + inteiro_negativo + "<br />"
 			+ "ponto flutuante: " + ponto_flutuante + "<br />"
 			+ "ponto flutuante (exponencial): " + exponencial + "<br />"
@@ -37,9 +37,15 @@ function literais() {
 	 * Calculo do fatorial
 	 */
 
-function fatorial() {
-	var console = document.getElementById( 'console' );
+function fatorial( n ) {
+	var stdout = document.getElementById( 'stdout' );
 	var fatorial = 1;
 
-	console.innerHTML = "fatorial: " + fatorial + "<br />";
+	console.log( fatorial );
+	for( var i = 1; i <= n; i++ ) {
+		fatorial = i * fatorial;
+		console.log( fatorial );
+	}
+
+	stdout.innerHTML = "fatorial: " + fatorial + "<br />";
 }
