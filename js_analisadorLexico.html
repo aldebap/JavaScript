@@ -1,22 +1,10 @@
 <!DOCTYPE html>
 
 <html>
-<!-- Page header -->
 <head>
-	<title>JavaScript Runtime Environment</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 
-<!-- body { min-width: 357px; overflow-x: hidden; } -->
-<!--
-button, input[ type="button" ], {
-	font-size: 100%;
-	margin: 0;
-	vertical-align: baseline;
-	*vertical-align: middle;
-	line-height: normal;
-	*overflow: visible;
-	cursor: pointer;
-	-webkit-appearance: button;
--->
+	<title>JavaScript - Analisador L&eacute;xico</title>
 
 	<style>
 body {
@@ -87,28 +75,42 @@ button, input[ type="button" ], {
 	-webkit-user-select:none;
 	-khtml-user-select:none;
 	user-select:none;
-	}
+}
 
-	/* A CSS stylesheet for the menu */
-	#menu {
-		padding: 5px;
-		background: #c0c0c0;
-		border: solid black 2px;
-		border-radius: 10px;
-	}
+/* A CSS stylesheet for the menu */
+#menu {
+	padding: 5px;
+	background: #c0c0c0;
+	border: solid black 2px;
+	border-radius: 10px;
+}
 
-	/* A CSS stylesheet for the stdout */
-	#stdout {
-		font: 12pt courier;
-		color: white;
-		background: black;
-		padding: 5px;
-		border: solid black 2px;
-		border-radius: 10px;
-	}
+/* A CSS stylesheet for the stdin */
+#stdin {
+	font: 12pt courier;
+	color: white;
+	background: black;
+	padding: 5px;
+	border: solid black 2px;
+	border-radius: 10px;
+}
+
+/* A CSS stylesheet for the stdout */
+#stdout {
+	font: 12pt courier;
+	color: white;
+	background: black;
+	padding: 5px;
+	border: solid black 2px;
+	border-radius: 10px;
+}
 	</style>
 
 	<script type="text/javascript" src="chapter2.js" />
+	<script type="text/javascript">
+	</script>
+
+	<script type="text/javascript" src="analisadorLexico.js" />
 	<script type="text/javascript">
 	</script>
 </head>
@@ -117,12 +119,14 @@ button, input[ type="button" ], {
 <body>
 	<div id="menu" class="menu">
 		<input id="btn_limpar" type="button" class="button" value="Limpar" onclick="javascript:limpar(); return false;" />
-		<input id="btn_literais" type="button" class="button" value="Literais" onclick="javascript:literais(); return false;" />
-		<input id="btn_fatorial" type="button" class="button" value="Fatorial" onclick="javascript:fatorial( 5 ); return false;" />
-		<input id="btn_potencia" type="button" class="button" value="Potencia" onclick="javascript:potencia( 2, 10 ); return false;" />
+		<input id="btn_analisar" type="button" class="button" value="Analisar" onclick="javascript:analisadorLexicoLOGO(); return false;" />
+	</div>
+	<div id="stdin" class="stdin">
+		<textarea name="stdin" cols="80" rows="10"></textarea>
 	</div>
 	<div id="stdout" class="stdout">
 		<br />
 	</div>
 </body>
 </html>
+
