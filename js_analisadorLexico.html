@@ -119,10 +119,10 @@ button, input[ type="button" ], {
 <body>
 	<div id="menu" class="menu">
 		<input id="btn_limpar" type="button" class="button" value="Limpar" onclick="javascript:limpar(); return false;" />
-		<input id="btn_analisar" type="button" class="button" value="Analisar" onclick="javascript:analisadorLexicoLOGO(); return false;" />
+		<input id="btn_analisar" type="button" class="button" value="Analisar" onclick="javascript:var sourceCode = document.getElementById( 'txt_sourceCode' ).value; analisadorLexicoLOGO( sourceCode ); return false;" />
 	</div>
 	<div id="stdin" class="stdin">
-		<textarea name="stdin" cols="80" rows="10"></textarea>
+		<textarea id="txt_sourceCode" cols="80" rows="10"></textarea>
 	</div>
 	<div id="stdout" class="stdout">
 		<br />
