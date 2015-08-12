@@ -1,10 +1,27 @@
 /* *
-	 * Funcao de Teste numero 1
+	 * Teste de recurso sinistro 1
 	 */
 
 function funcaoUm() {
 	var console = document.getElementById( 'console' );
-	var inteiro_positivo = 125;
+	var valor = 25;
 
-	console.innerHTML = "inteiro (positivo): " + inteiro_positivo + "<br />";
+	console.innerHTML = console.innerHTML + "valor: " + valor + "<br />";
+
+	function funcaoSinistra() {
+		var valor = 13;
+
+		console.innerHTML = console.innerHTML + "valor: " + valor + "<br />";
+
+		function funcaoEmbutida() {
+
+			console.innerHTML = console.innerHTML + "valor: " + valor + "<br />";
+		}
+
+		return funcaoEmbutida;
+	}
+
+	var funcao = funcaoSinistra();
+
+	funcao();
 }
