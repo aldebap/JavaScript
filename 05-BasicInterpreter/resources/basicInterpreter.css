@@ -1,0 +1,54 @@
+/*  *
+    * BASIC interpreter styles
+    */
+
+/* html body style */
+body {
+    min-width: 357px;
+}
+
+/* html img style */
+img {
+    margin: 5px;
+    border: 2px solid black;
+    vertical-align: middle;
+    width: 75px;
+    height: 75px;
+}
+
+/* the screen panel style */
+.screen_panel {
+    font: 12pt 'Lucida Console';
+    color: white;
+    background: black;
+    padding: 5px;
+    border: solid black 2px;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+/* one line of the screen grid style */
+div.screen_line {
+    display: table;
+    height: 14px;
+}
+
+/* each character (normal) of the screen grid style */
+div.screen_char {
+    display: table-cell;
+    font: 12pt 'Lucida Console';
+    color: orange;
+    background: black;
+    padding: 1px;
+    width: 10px;
+}
+
+/* each character (inverted) of the screen grid style */
+div.screen_char_inverted {
+    display: table-cell;
+    font: 12pt 'Lucida Console';
+    color: black;
+    background: orange;
+    padding: 1px;
+    width: 10px;
+}
